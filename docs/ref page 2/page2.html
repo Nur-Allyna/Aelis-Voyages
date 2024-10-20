@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<!--
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Intro</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+		body {
+		  background-color: #ebe8e1;
+		  font-family: "Helvetica Neue", sans-serif;
+		  margin : 0;
+		}
+		html,input,select,textarea {
+			font-family:'Varela Round',sans-serif;
+		}
+		body {
+			margin:0;
+			font-family: 'Open Sans',sans-serif;
+		}
+		body,h2,h3,h4,h5,h6 {
+		font-family: "Montserrat", sans-serif
+		}
+		img {
+		  border: 35px solid #ffff;
+		  /*margin-top: 50px;*/
+		}
+		header {
+			position: absolute;
+		}
+		@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400);
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="divided">
+			
+			<!-- Sidebar/menu -->
+			<nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
+			  <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-32">CLOSE</a> 
+			  <a href="../index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">HOME</a> 
+			  <a href="page2.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">INTRO</a> 
+			  <a href="../ref page 3/page3.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">GALLERY</a>
+			</nav>
+
+			<!-- Navbar (sit on top) -->
+			<div class="w3-top">
+			  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+				<!-- Right-sided navbar links. Hide them on small screens -->
+				<div class="w3-left w3-hide-small">
+				  <a href="#traveldiary" class="w3-bar-item w3-button" style="letter-spacing:4px;"><b>Desima</b></a>
+				</div>
+				<div class="w3-right w3-hide-small">
+				  <!--<a href="#about" class="w3-bar-item w3-button">About</a>-->
+				  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-white" onclick="w3_open()"><b>☰<b></a>
+				</div>
+			  </div>
+			</div>
+			
+			<!-- Top menu on small screens -->
+			<!--<header class="w3-container w3-top w3-white w3-xlarge w3-padding-7">
+			  <span class="w3-left w3-padding" style="font-family: Montserrat, sans-serif; letter-spacing: 4px; padding: 14px 16px;">DESIMA</span>
+			  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-white" onclick="w3_open()"><b>☰<b></a>
+			</header>-->
+
+			<!-- Overlay effect when opening sidebar on small screens -->
+			<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+			
+				<!-- One -->
+					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+						<div class="content">
+							<h1 style="font-family: Georgia, serif; text-align: center;">This Memoir</h1>
+							<p class="major" style="font-family: Helvetica Neue, sans-serif; font-weight: normal; text-align: center;">Is a curated travel diary, where the essence of exploration and the excitement of discovering new horizons are meticulously captured. Beneath the expansive skies, embark on enthralling adventures, immersing yourself in the world through the lens of these experiences and fostering a shared appreciation for the joy of travel.</p>
+							<ul class="actions stacked" style="text-align: center;">
+								<li><a href="../ref page 3/page3.html" class="button big wide smooth-scroll-middle"><b>Next Page</b></a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/bg2.jpeg" alt="page2img"/>
+						</div>
+					</section>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+			// Script to open and close sidebar
+			function w3_open() {
+			  document.getElementById("mySidebar").style.display = "block";
+			  document.getElementById("myOverlay").style.display = "block";
+			}
+
+			function w3_close() {
+			  document.getElementById("mySidebar").style.display = "none";
+			  document.getElementById("myOverlay").style.display = "none";
+			}
+
+			// Modal Image Gallery
+			function onClick(element) {
+			  document.getElementById("img01").src = element.src;
+			  document.getElementById("modal01").style.display = "block";
+			  var captionText = document.getElementById("caption");
+			  captionText.innerHTML = element.alt;
+			}
+			</script>
+	</body>
+</html>
